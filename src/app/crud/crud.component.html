@@ -1,0 +1,14 @@
+<div>
+  <h1>Buscar Pessoa</h1>
+  <label for="id">ID:</label>
+  <input type="number" [(ngModel)]="id" id="id">
+  <button (click)="buscarPessoa()">OK</button>
+
+  <div *ngIf="pessoa">
+    <h2>Informações da Pessoa</h2>
+    <p>ID: {{ pessoa.id }}</p>
+    <p>Nome: {{ pessoa.name }}</p>
+    <p>Idade: {{ pessoa.idade }}</p>
+    <p>Email: {{ pessoa.email }}</p>
+  </div>
+</div>
